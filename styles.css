@@ -727,13 +727,13 @@ a {
 }
 
 #project1 {
-  background-image: url(./projects/razorpay.jpg);
+  background-image: url(./projects/bookm.png);
   right: 5%;
   margin-top: 5rem;
 }
 
 #project2 {
-  background-image: url(/projects/discord.jpg);
+  background-image: url(/projects/luxury.png);
   left: 5%;
 }
 
