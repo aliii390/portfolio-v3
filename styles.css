@@ -528,7 +528,7 @@ a {
 .frontSide,
 .frontSide::before {
 
-  background-image: url("userAsset/ali.jpg");
+  background-image: url("./userAsset/ali.jpg");
   background-size: cover;
   background-position: center;
 
