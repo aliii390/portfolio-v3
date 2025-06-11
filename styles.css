@@ -528,7 +528,7 @@ a {
 .frontSide,
 .frontSide::before {
 
-  background-image: url("/userAsset/ali.jpg");
+  background-image: url("userAsset/ali.jpg");
   background-size: cover;
   background-position: center;
 
@@ -727,23 +727,23 @@ a {
 }
 
 #project1 {
-  background-image: url(./projects/bookm.png);
+  background-image: url(projects/bookm.png);
   right: 5%;
   margin-top: 5rem;
 }
 
 #project2 {
-  background-image: url(/projects/luxury.png);
+  background-image: url(projects/luxury.png);
   left: 5%;
 }
 
 #project3 {
-  background-image: url(/projects/tp-tailwind.jpg);
+  background-image: url(projects/tp-tailwind.jpg);
   right: 5%;
 }
 
 #project4 {
-  background-image: url(/projects/chatbot.png);
+  background-image: url(projects/chatbot.png);
   left: 5%;
 }
 
