@@ -743,7 +743,7 @@ a {
 }
 
 #project4 {
-  background-image: url(/projects/Project4.png);
+  background-image: url(/projects/chatbot.png);
   left: 5%;
 }
 
@@ -1139,7 +1139,7 @@ a {
   width: fit-content;
   font-weight: 700;
   font-size: 50px;
-  line-height: 60px;
+  line-height: 90px;
 }
 
 .skillHeading::first-letter {
@@ -1360,6 +1360,7 @@ a {
 .upper p {
   font-weight: 300;
   display: inline-block;
+  font-size: 20px;
 }
 
 .upper h3 {
