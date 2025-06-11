@@ -738,7 +738,7 @@ a {
 }
 
 #project3 {
-  background-image: url(/projects/Password\ generator.jpg);
+  background-image: url(/projects/tp-tailwind.jpg);
   right: 5%;
 }
 
@@ -1327,7 +1327,7 @@ a {
 
 .contactSection {
   /* background-color: rgb(31, 31, 31); */
-  background-image: url(./stack/connect.png);
+  /* background-image: url(./stack/connect.png); */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -1480,137 +1480,148 @@ textarea {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-.footer {
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  background-color: black;
+/* Experience Section Start */
+.experienceSection {
+    background-color: rgb(0, 0, 0);
+    padding-top: 4rem;
+    padding-bottom: 8rem;
+    position: relative;
 }
 
-.ft-grad {
-  background-image: url(./stack/footer-gradient.svg);
-  filter: opacity(90%);
-  filter: contrast(125%);
-  opacity: 70%;
-  background-position: bottom;
-  background-size: cover;
-  padding-top: 120px;
+.experienceTitle {
+    color: rgb(235, 235, 235);
+    font-size: 90px;
+    text-align: center;
+    margin-bottom: 4rem;
 }
 
-.secondLast {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 300px;
-  z-index: 100;
+.experienceContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 0 2rem;
 }
 
-.secondLast>a>h2 {
-  margin-bottom: 20px;
-  font-size: 2.2rem;
-  font-weight: 800;
-  letter-spacing: 0.5px;
-  background: linear-gradient(43deg, rgb(65, 88, 208) 0%, rgb(200, 80, 192) 46%, rgb(255, 204, 112) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.experienceCard {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
 }
 
-.secondLast>p {
-  font-size: 0.9rem;
-  color: rgba(238, 232, 232, 0.673);
-  font-weight: 900;
+.experienceCard:hover {
+    transform: scale(1.02);
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 40px rgba(238, 181, 245, 0.1);
 }
 
-.last-links {
-  margin-top: 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
+.experienceCard::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.05), transparent);
+    transition: 0.5s;
 }
 
-.last-quote {
-  display: flex;
-  margin-top: 2rem;
-  gap: 1.2rem;
-  height: 20px;
-  margin-top: 5rem;
+.experienceCard:hover::before {
+    left: 100%;
 }
 
-.last-quote>.left-border {
-  transform: rotateY(180deg);
+.experienceContent {
+    position: relative;
+    z-index: 1;
 }
 
-.last-quote .left-border,
-.right-border {
-  opacity: 20%;
-  margin-top: 4px;
+.experienceDate {
+    color: var(--bgOrange);
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
 }
 
-.last-quote>p {
-  color: #ffffff;
-  opacity: 20%;
-  text-align: center;
-  font-size: small;
-  font-weight: 500;
-  text-transform: lowercase;
+.experienceRole {
+    color: rgb(235, 235, 235);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(43deg, rgb(65, 88, 208) 0%, rgb(200, 80, 192) 46%, rgb(255, 204, 112) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.copyright {
-  background-color: rgba(16, 16, 16, 0.243);
-  display: flex;
-  height: 36px;
-  align-items: center;
-  justify-content: center;
-  max-width: 1400px;
-  margin: 0 auto;
+.experienceCompany {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
 }
 
-.copyright p {
-  font-size: 0.7rem;
-  color: gray;
-} */
+.experienceDescription ul {
+    list-style: none;
+    padding: 0;
+}
 
+.experienceDescription li {
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+    line-height: 1.6;
+}
 
+.experienceDescription li::before {
+    content: "•";
+    color: var(--bgOrange);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
 
+.experienceFadedText {
+    user-select: none;
+    font-size: 6.5em;
+    color: rgb(11, 11, 11);
+    bottom: -3.4%;
+    right: 1%;
+    font-weight: bold;
+}
 
+@media (max-width: 900px) {
+    .experienceTitle {
+        font-size: 40px;
+        margin-bottom: 2rem;
+    }
 
+    .experienceContainer {
+        padding: 0 1rem;
+    }
 
+    .experienceCard {
+        padding: 1.5rem;
+    }
 
+    .experienceRole {
+        font-size: 1.2rem;
+    }
 
+    .experienceCompany {
+        font-size: 1rem;
+    }
 
+    .experienceFadedText {
+        font-size: 3em;
+    }
+}
 
-
-
-
-
-
-
-
-
+/* Experience Section End */
 .footer {
   display: flex;
   flex-direction: column;
